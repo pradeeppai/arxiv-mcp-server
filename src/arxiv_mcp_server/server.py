@@ -41,7 +41,7 @@ async def get_prompt(
 @server.list_tools()
 async def list_tools() -> List[types.Tool]:
     """List available arXiv research tools."""
-    return [search_tool, download_tool, list_tool, read_tool]
+    return [search_tool,list_tool, read_tool]
 
 
 @server.call_tool()
