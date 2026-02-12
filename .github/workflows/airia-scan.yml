@@ -38,7 +38,7 @@ jobs:
             -e AIRIA_API_TOKEN="${{ secrets.AIRIA_API_TOKEN }}" \
             -v "${{ github.workspace }}:/github/workspace:ro" \
             -v "${{ github.workspace }}/scan-output:/output:rw" \
-            ghcr.io/airia/code-scanner:latest
+            airiadevops305/airia-code-scanner:latest
 
       - name: Upload Results
         if: always()
